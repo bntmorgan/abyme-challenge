@@ -1,0 +1,19 @@
+============
+Image format
+============
+
+* Binary header (milkimyst)
+
+0x00 : file_size (big endian)
+0x04 : crc32 (big endian)
+
+* Challenge solution header
+
+0x08 : total size
+0x0c : expected resolution time in millis
+0x10 : solution data
+
+* Challenge system table
+a = 0x10 + total_size - 0x8 - 1 : Challenge system table pointer reserved space
+a + 0x8 : challenge x86 code
+
