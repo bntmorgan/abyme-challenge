@@ -11,9 +11,6 @@ void challenge_start(void) {
   for (j = 0; j < 0x100; j++) {
     // init
     xor[0] = 0, xor[1] = 0, xor[2] = 0, xor[3] = 0;
-//    if (j > 50) {
-//      i = 0;
-//    }
     // 0 to f
     for (i = 0; i < 0x10; i++) {
       rax = i, rbx = 0x0, rcx = 0x0, rdx = 0x0;

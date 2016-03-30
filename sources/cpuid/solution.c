@@ -14,7 +14,7 @@ cpuid_solution s __attribute__((section(".solution"))) = {
   // Solution header
   .h = {
     .size = sizeof(cpuid_solution), // Size of the solution
-    .time = 0x200,                  // expected execution time in micro fbb
+    .time = 0x250,                  // expected execution time in micro fbb
     .bar_bitmap = (uint32_t)-1,     // The expected BAR
   },
   // Solution : CPUID space xor
