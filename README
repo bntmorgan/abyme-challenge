@@ -11,9 +11,10 @@ Image format
 
 0x08 : total size
 0x0c : expected resolution time in millis
-0x10 : solution data
+0x10 : bar_bitmap (in which register write the solution)
+0x14 : solution data
 
 * Challenge system table
-a = 0x10 + total_size - 0x8 - 1 : Challenge system table pointer reserved space
+a = 0x14 + total_size - 0x8 - 1 : Challenge system table pointer reserved space
 a + 0x8 : challenge x86 code
 
