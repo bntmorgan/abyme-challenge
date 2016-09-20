@@ -77,7 +77,7 @@ info:
 
 copy: $(TARGETS)
 	@echo "  [CP]"
-	@echo $(TARGETS) | grep bin$ | awk '{print " -v "$$1" \
+	@echo $(TARGETS) | sed -e 's/[ ][^ ]*\.elf//g' | awk '{print " -v "$$0" \
 		../../eric/tftpy/root/"}' | xargs cp
 
 # Disassemble raw 64 bit binary
