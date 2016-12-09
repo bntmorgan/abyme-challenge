@@ -3,7 +3,7 @@
 
 /**
  * This file is manipulated by ERIC
- */ 
+ */
 
 typedef struct _cpuid_solution {
   solution_header h;
