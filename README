@@ -1,3 +1,8 @@
+abyme-challenge/
+  Le code des challenges envoyés depuis le périphérique de confiance vers
+  l'hyperviseur. Celui-ci doit les exécuter pour prouver son intégrité.
+  Code 100% LAAS.
+
 ============
 Image format
 ============
